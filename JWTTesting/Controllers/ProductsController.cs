@@ -9,6 +9,9 @@ using JWTTesting.Models;
 
 namespace JWTTesting.Controllers
 {
+    using Microsoft.AspNetCore.Authorization;
+
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class ProductsController : ControllerBase
